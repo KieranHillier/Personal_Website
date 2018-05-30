@@ -6,15 +6,18 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="lity/dist/lity.css" rel="stylesheet">
+    <script src="lity/vendor/jquery.js"></script>
+    <script src="lity/dist/lity.js"></script>
     <link rel="stylesheet" href="main.css">
     <title>Test</title>
 
   </head>
   <body>
 
-    <header class="home fixed-top text-white py-4 px-0 " id="header">
+    <header class="home fixed-top text-white" id="header">
       <div class="container-fluid control">
-        <nav class="navbar navbar-expand-md navbar-light bg-transparent d-flex">
+        <nav class="navbar navbar-expand-md navbar-light d-flex">
 
             <h1 class="lead display-4">KH</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,33 +29,23 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="#target">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link" href="#footer">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Disabled</a>
+                  <a class="nav-link" href="#">Resume</a>
                 </li>
               </ul>
             </div>
         </nav>
     </div>
     </header>
-    <!-- <section>
-      <div class="jumbotron text-center home d-flex">
-        <div class="container-fluid control">
-          <div class="home-typer text-white">
-            <h1 class="text-center my-auto align-middle">(647)-856-4385</h1>
-
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="jumbotron home text-center text-white home-typer d-flex">
       <div class="container-fluid control my-auto">
-          <h1 class="display-3">
+          <h1 class="display-2">
             <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to Kierans portfolio!", "Kieran studies urban planning.", "Kieran aspires to be a developer.", "Kieran is a chill dude." ]'>
               <span class="wrap"></span>
             </a>
@@ -60,42 +53,114 @@
       </div>
     </section>
 
-
-
     <section>
       <div class="portfolio">
+        <a id="target"></a>
         <div class="container-fluid control">
-          <div id="portfolio-grid">
-            <div class="portfolio-item">
-              <h1>test1</h1>
+
+            <div class="album">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-lg-6">
+                    <div class="card mb-4">
+                      <div class="hover-effect">
+                        <!-- <a href="globe.jpg" data-lity data-lity-target="/image-preview.jpg" class="card-img-top">Image</a> -->
+                        <div class="card-img-top" style="background-image: url(globe.jpg);" id="interactiveMap"></div>
+                        <div class="overlay-container">
+                          <a href="https://kieranhillier.github.io/Interactive_3D_Globe/" data-lity class="overlay">View</a>
+                          <!-- <div class="overlay-text">View</div> -->
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="justify-content-between align-items-center">
+                          <h5 class="card-title">Interactive 3D Globe</h5>
+                          <button href="#" class="btn btn-outline-secondary git-btn">GitHub</button>
+                          <small class="text-muted sub-text">JavaScript • Three.JS • WebGL</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="card mb-4">
+                      <div class="hover-effect">
+                        <div class="card-img-top" style="background-image: url(interactive-map.png);" id="interactiveMap"></div>
+                        <div class="overlay-container">
+                          <a href="https://kieranhillier.github.io/Mapbox_Interactive_Template/" data-lity class="overlay">View</a>
+                          <!-- <div class="overlay-text">View</div> -->
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="justify-content-between align-items-center">
+                          <h5 class="card-title">Interactive 3D Globe</h5>
+                          <button href="#" class="btn btn-outline-secondary git-btn">GitHub</button>
+                          <small class="text-muted sub-text">JavaScript • Three.JS • WebGL</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="col-md-6">
+                    <div class="card mb-4">
+                      <div class="hover-effect">
+                        <div class="card-img-top" style="background-image: url(globe.jpg);" id="interactiveMap"></div>
+                        <div class="overlay">
+                          <div class="overlay-text">View</div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="justify-content-between align-items-center">
+                          <h5 class="card-title">Interactive 3D Globe</h5>
+                          <button href="#" class="btn btn-outline-secondary git-btn">GitHub</button>
+                          <small class="text-muted sub-text">JavaScript • Three.JS • WebGL</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card mb-4">
+                      <div class="hover-effect">
+                        <div class="card-img-top" style="background-image: url(interactive-map.png);" id="interactiveMap"></div>
+                        <div class="overlay">
+                          <div class="overlay-text">View</div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <div class="justify-content-between align-items-center">
+                          <h5 class="card-title">Interactive 3D Globe</h5>
+                          <button href="#" class="btn btn-outline-secondary git-btn">GitHub</button>
+                          <small class="text-muted sub-text">JavaScript • Three.JS • WebGL</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+                </div>
+
+              </div>
             </div>
-            <div class="portfolio-item">
-              <h1>test1</h1>
-            </div>
-            <div class="portfolio-item">
-              <h1>test1</h1>
-            </div>
-            <div class="portfolio-item">
-              <h1>test1</h1>
-            </div>
-            <div class="portfolio-item">
-              <h1>test1</h1>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
 
 
-    <footer>
-      <div class="home">
-        <div class="container-fluid control">
-          <div class="d-flex">
 
-          </div>
+    <footer class="home quota d-flex">
+        <a id="footer"></a>
+        <div class="container-fluid control my-auto">
+
         </div>
-      </div>
     </footer>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>

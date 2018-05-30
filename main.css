@@ -13,12 +13,12 @@ nav {
  animation: colorchange 50s;
  -webkit-animation: colorchange 50s;
  animation-iteration-count: infinite;
- padding-top: 140px;
+ /* padding-top: 140px; */
 }
-#header {
+/* #header {
   transition: 0.3s;
-  /* width: 100%; */
-}
+  width: 100%;
+} */
 .wrapper {
 
  max-width: 1048px;
@@ -81,7 +81,7 @@ footer {
  margin: 25px 0;
 }
 .quota {
- height: 550px;
+ height: 200px;
 }
 
 a {
@@ -107,3 +107,61 @@ a {
 .portfolio-item {
   background: red;
 }
+
+.card-title {
+  display: inline;
+}
+.git-btn {
+  float: right;
+}
+.sub-text {
+  display: block;
+}
+.hover-effect {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+.hover-effect:hover .overlay {
+  opacity: 0.6;
+}
+/* .overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
+/* .lity-container {
+  max-width: 1704px;
+} */
+/* .lity {
+  position: absolute;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  top: 0;
+} */
+.card-img-top {
+  background-size: cover;
+  height: 411px;
+}
+/* #interactiveMap {
+  background-image: url("interactive-map.png");
+} */
